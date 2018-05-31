@@ -1,0 +1,44 @@
+{
+  "name": "adaptive_cakes",
+  "version": "1.0.0",
+  "description": "adaptive project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npm run editorconfig && npm run stylelint",
+    "build": "gulp style",
+    "start": "gulp serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katebraun/adaptive_cakes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/katebraun/adaptive_cakes/issues"
+  },
+  "homepage": "https://github.com/katebraun/adaptive_cakes#readme",
+  "devDependencies": {
+    "autoprefixer": "^8.5.2",
+    "browser-sync": "^2.24.4",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-changed": "^3.2.0",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-csso": "^3.0.1",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-posthtml": "^3.0.4",
+    "gulp-rename": "^1.2.3",
+    "gulp-sass": "^4.0.1",
+    "gulp-svgmin": "^1.2.4",
+    "gulp-svgstore": "^6.1.1",
+    "gulp-uglify": "^3.0.0",
+    "posthtml-include": "^1.1.0",
+    "pump": "^3.0.0",
+    "run-sequence": "^2.2.1"
+  }
+}
