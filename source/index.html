@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
     <title>Cakes</title>
-    <meta charset="utf-8" />
-    <link href="/css/style.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -49,7 +49,7 @@
       </section>
     </header>
 
-    <main class="page-content">
+    <main class="page-main">
       <section class="our-cakes">
         <a name="our-cakes"></a>
         <div class="our-cakes__wrapper">
@@ -105,6 +105,99 @@
         <a name="individual"></a>
         <h2 class="individual-order__title">Индивидуальный заказ</h2>
         <p class="individual-order__subtitle">Соберите торт в 3 шага</p>
+
+        <article class="individual-order__item order-item">
+          <h3 class="order-item__title"><span>01</span>Начинка</h3>
+          <ul class="order-item__slider order-filling">
+            <li class="order-filling__slide js-showing">
+              <img class="order-filling__img" src="img/raster/filling1_mobile.png" width="240" height="112" alt="Шоколадный ганаш">
+              <b class="order-filling__subtitle">Шоколадный ганаш</b>
+              <p class="order-filling__text">Ароматный шоколадный бисквит, густой шоколадный крем - самый шоколадный из всех возможных десертов!</p>
+              <b class="order-filling__price">1000 руб/кг</b>
+            </li>
+            <li class="order-filling__slide">
+              <img class="order-filling__img" src="img/raster/filling2_mobile.png" width="240" height="112" alt="Мятный ганаш">
+              <b class="order-filling__subtitle">Мятный ганаш</b>
+              <p class="order-filling__text">Ароматный мятный бисквит, густой мятный крем - самый мятный из всех возможных десертов!</p>
+              <b class="order-filling__price">900 руб/кг</b>
+            </li>
+          </ul>
+          <ul class="order-item__controls">
+            <li class="order-item__control order-item__control--previous">
+              <div></div>
+            </li>
+            <li class="order-item__control order-item__control--next">
+              <div></div>
+            </li>
+          </ul>
+          <button class="button button--order">Выбрать</button>
+        </article>
+
+        <article class="individual-order__item order-item">
+          <h3 class="order-item__title"><span>02</span>Размер</h3>
+          <ul class="order-item__slider order-size">
+            <li class="order-size__slide js-showing">
+              <p class="order-size__img">1 кг</p>
+              <p class="order-size__text">17-18 см</p>
+              <p class="order-size__text">(6 персон)</p>
+            </li>
+            <li class="order-size__slide">
+              <p class="order-size__img">3 кг</p>
+              <p class="order-size__text">23-24 см</p>
+              <p class="order-size__text">(10-12 персон)</p>
+            </li>
+          </ul>
+          <ul class="order-item__controls">
+            <li class="order-item__control order-item__control--previous">
+              <div></div>
+            </li>
+            <li class="order-item__control order-item__control--next">
+              <div></div>
+            </li>
+          </ul>
+          <button class="button button--order">Выбрать</button>
+        </article>
+
+        <article class="individual-order__item order-item">
+          <h3 class="order-item__title"><span>03</span>Оформление</h3>
+          <ul class="order-item__slider order-decor">
+            <li class="order-decor__slide js-showing">
+              <img class="order-decor__img" src="img/raster/decor1_mobile.jpg" width="168" height="196" alt="Маршмеллоу">
+              <b class="order-decor__text">Маршмеллоу</b>
+              <p class="order-decor__price">600 руб/кг</p>
+            </li>
+            <li class="order-decor__slide">
+              <img class="order-decor__img" src="img/raster/decor2_mobile.jpg" width="168" height="196" alt="Ягодное ассорти">
+              <b class="order-decor__text">Ягодное ассорти</b>
+              <p class="order-decor__price">700 руб/кг</p>
+            </li>
+          </ul>
+          <ul class="order-item__controls">
+            <li class="order-item__control order-item__control--previous">
+              <div></div>
+            </li>
+            <li class="order-item__control order-item__control--next">
+              <div></div>
+            </li>
+          </ul>
+          <button class="button button--order">Выбрать</button>
+        </article>
+
+        <article class="individual-order__item your-choice">
+          <form class="your-choice__form" action="http://echo.htmlacademy.ru" method="post">
+            <label class="your-choice__label" for="filling">Начинка</label>
+            <input class="your-choice__input" type="text" id="filling" name="filling" placeholder="Шоколадный ганаш" required>
+
+            <label class="your-choice__label" for="size">Размер</label>
+            <input class="your-choice__input" type="text" id="size" name="size" placeholder="2 кг" required>
+
+            <label class="your-choice__label" for="decor">Оформление</label>
+            <input class="your-choice__input" type="text" id="decor" name="decor" placeholder="Маршмеллоу" required>
+
+            <button class="button button--submit" type="submit">Заказать торт</button>
+          </form>
+
+        </article>
       </section>
 
       <section class="reviews">
@@ -235,18 +328,19 @@
         <p class="contacts__subtitle">Остались вопросы?</p>
         <p class="contacts__text">Заполните форму ниже и наш кондитер свяжется с вами.</p>
 
-        <form class="contacts__form form" action="http://echo.htmlacademy.ru" method="post">
+        <form class="contacts__form contacts-form" action="http://echo.htmlacademy.ru" method="post">>
 
           <label class="visually-hidden" for="name">Ваше имя</label>
-          <input class="form__name" type="text" id="name" placeholder="Ваше имя" required>
+          <input class="contacts-form__name" type="text" id="name" placeholder="Ваше имя" required>
 
           <label class="visually-hidden" for="email">Ваше имя</label>
-          <input class="form__email" type="email" id="email" placeholder="Ваш e-mail" required>
+          <input class="contacts-form__email" type="email" id="email" placeholder="Ваш e-mail" required>
 
           <label class="visually-hidden" for="message">Ваше имя</label>
-          <textarea class="form__message" id="message" placeholder="Ваш вопрос" required></textarea>
+          <textarea class="contacts-form__message" id="message" placeholder="Ваш вопрос" required></textarea>
+
+          <button class="button button--form" type="submit">Отправить</button>
         </form>
-        <button class="button button--form" type="submit">Отправить</button>
 
         <p class="contacts__text">Или позвоните по телефону: +7 (906) 899-92-96</p>
         <p class="contacts__text">Наша почта: bakerypavel@mail.ru</p>
@@ -303,7 +397,7 @@
         </div>
 
         <div class="developers">
-          <p>
+          <p class="developers__text">
             &copy; 2018 Cakes
           </p>
         </div>
