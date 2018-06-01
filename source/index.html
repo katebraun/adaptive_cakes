@@ -173,10 +173,57 @@
 
       <section class="order">
         <a name="how-to-order"></a>
+        <div class="order__wrapper">
+          <h3 class="order__title">Как заказать</h3>
+          <ol class="order__list">
+            <li class="order__item">
+              <b class="order__subtitle">Срок заказа</b>
+              <p class="order__text">Зазмещать заказы желательно за 2-3 дня. На выходные заказы лучше размещать минимум за неделю.</p>
+            </li>
+            <li class="order__item">
+              <b class="order__subtitle">Доставка по городу</b>
+              <p class="order__text">Доставка в пределах города 200 рублей, при заказе на сумму более 2000 доставка бесплатна.</p>
+            </li>
+            <li class="order__item">
+              <b class="order__subtitle">Доставка за городом</b>
+              <p class="order__text">Доставка за пределами города рассчитываются индивидуально.</p>
+            </li>
+          </ol>
+        </div>
       </section>
 
       <section class="contacts">
         <a name="contacts"></a>
+        <h2 class="contacts__title">Контакты</h2>
+        <p class="contacts__subtitle">Остались вопросы?</p>
+        <p class="contacts__text">Заполните форму ниже и наш кондитер свяжется с вами.</p>
+
+        <form class="contacts__form form" action="http://echo.htmlacademy.ru" method="post">
+
+          <label class="visually-hidden" for="name">Ваше имя</label>
+          <input class="form__name" type="text" id="name" placeholder="Ваше имя" required>
+
+          <label class="visually-hidden" for="email">Ваше имя</label>
+          <input class="form__email" type="email" id="email" placeholder="Ваш e-mail" required>
+
+          <label class="visually-hidden" for="message">Ваше имя</label>
+          <textarea class="form__message" id="message" placeholder="Ваш вопрос" required>
+        </form>
+        <button class="button button--form" type="submit">Отправить</button>
+
+        <p class="contacts__text">Или позвоните по телефону: +7 (906) 899-92-96</p>
+        <p class="contacts__text">Наша почта: bakerypavel@mail.ru</p>
+        <p class="contacts__text">Мы в соцсетях:</p>
+        <div class="contacts__social contacts-social">
+          <ul class="contacts-social__list">
+            <li class="contacts-social__item">
+              <a class="contacts-social__link contacts-social__link--insta" href="#">Instagram</a>
+            </li>
+            <li class="contacts-social__item">
+              <a class="contacts-social__link contacts-social__link--vk" href="#">Vkontakte</a>
+            </li>
+          </ul>
+        </div>
       </section>
 
     </main>
