@@ -300,21 +300,24 @@ template {
 
 @font-face {
   font-family: "Circe";
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
   src: local("Circe"), url("../fonts/Circe-Regular.ttf") format("ttf"); }
 
 @font-face {
   font-family: "IntroScriptR";
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
-  src: local("IntroScriptR"), url("../fonts/IntroScriptR-H2Base.otf") format("otf"); }
+  src: url("../fonts/IntroScriptR-H2Base.woff") format("woff"); }
 
 @font-face {
   font-family: "PlayfairDisplay";
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
-  src: local("PlayfairDisplay"), url("../fonts/PlayfairDisplay-Bold.ttf") format("ttf"); }
+  src: local("PlayfairDisplay"), url("../fonts/playfairdisplaybold.woff") format("woff"); }
 
 img {
   max-width: 100%; }
@@ -325,3 +328,172 @@ img {
   width: 1px;
   height: 1px;
   margin: -1px; }
+
+body {
+  background-color: #fbebea;
+  font-family: "Circe", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px; }
+
+.page-header {
+  margin: 0 auto; }
+
+.page-header__wrapper {
+  min-height: 40px;
+  background-color: #ffffff; }
+
+.logo {
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+  font-family: "PlayfairDisplay", "Times New Roman", serif;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: bold;
+  border-bottom: 1px #f50049 solid; }
+  @media (min-width: 768px) {
+    .logo {
+      padding: 0 20px; } }
+  @media (min-width: 1300px) {
+    .logo {
+      padding: 0 74px;
+      max-width: 1300px; } }
+
+.navigation {
+  position: relative;
+  font-family: "Circe", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #000000; }
+
+.navigation__button {
+  position: absolute;
+  right: 0;
+  top: -40px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  font-size: 0;
+  background-color: grey; }
+
+.navigation__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.navigation__item {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  border-top: 1px solid #fbebea; }
+
+.navigation__item:first-child {
+  border-top: none; }
+
+.navigation__link {
+  text-decoration: none;
+  color: #000000; }
+
+.intro {
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; }
+  @media (min-width: 768px) {
+    .intro {
+      padding: 0 20px; } }
+  @media (min-width: 1300px) {
+    .intro {
+      padding: 0 74px;
+      max-width: 1300px; } }
+
+.intro__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .intro__wrapper::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/raster/header_picture_mobile.png");
+    width: 320px;
+    height: 225px;
+    top: -40px;
+    left: -20px;
+    z-index: -1; }
+
+.intro__title {
+  font-family: "PlayfairDisplay", "Times New Roman", serif;
+  font-size: 39px;
+  line-height: 37px;
+  font-weight: bold;
+  letter-spacing: 0.09em;
+  margin: 128px auto 0;
+  display: block;
+  text-align: center; }
+
+.intro__subtitle {
+  font-family: "IntroScriptR", "Arial", sans-serif;
+  font-size: 22px;
+  line-height: 15px; }
+
+.details {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: -9px;
+  margin-bottom: 27px;
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: -0.03em; }
+
+.details__item {
+  position: relative;
+  padding-left: 42px; }
+  .details__item::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 33px;
+    height: 33px;
+    background-image: url("../img/raster/icon-ingredient.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .details__item--del::before {
+    top: 11px;
+    background-image: url("../img/raster/icon-delivery.png"); }
+
+.button {
+  font-family: "Circe", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #f50049;
+  padding: 14px 65px 11px;
+  border-radius: 25px; }
+  .button:hover, .button:focus {
+    box-shadow: 0px 5px 10px 2px rgba(255, 0, 67, 0.3); }
+  .button:active {
+    margin-top: 5px;
+    margin-bottom: -5px;
+    box-shadow: none;
+    background-color: #c9033e;
+    color: lightgrey; }

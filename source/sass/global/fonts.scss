@@ -1,5 +1,6 @@
 @font-face {
   font-family: "Circe";
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
   src: local("Circe"),
@@ -7,17 +8,18 @@
 }
 
 @font-face {
-  font-family: "IntroScriptR";
-  font-style: normal;
-  font-display: swap;
-  src: local("IntroScriptR"),
-    url("../fonts/IntroScriptR-H2Base.otf") format("otf");
+    font-family: "IntroScriptR";
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    src: url("../fonts/IntroScriptR-H2Base.woff") format('woff');
 }
 
 @font-face {
   font-family: "PlayfairDisplay";
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
   src: local("PlayfairDisplay"),
-    url("../fonts/PlayfairDisplay-Bold.ttf") format("ttf");
+    url("../fonts/playfairdisplaybold.woff") format("woff");
 }

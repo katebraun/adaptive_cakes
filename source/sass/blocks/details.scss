@@ -1,0 +1,35 @@
+.details {
+  @include reset-list;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: -9px;
+  margin-bottom: 27px;
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: -0.03em
+}
+
+.details__item {
+  position: relative;
+  padding-left: 42px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 33px;
+    height: 33px;
+    background-image: url("../img/raster/icon-ingredient.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &--del::before {
+    top: 11px;
+    background-image: url("../img/raster/icon-delivery.png");
+  }
+}

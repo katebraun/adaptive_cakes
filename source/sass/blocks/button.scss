@@ -1,0 +1,24 @@
+.button {
+  font-family: $circe;
+  font-size: 13px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $white;
+  background-color: $pink;
+  padding: 14px 65px 11px;
+  border-radius: 25px;
+
+  &:hover,
+  &:focus {
+  box-shadow: 0px 5px 10px 2px rgba( 255, 0, 67, 0.3);
+  }
+
+  &:active {
+    margin-top: 5px;
+    margin-bottom: -5px;
+    box-shadow: none;
+    background-color: #c9033e;
+    color: lightgrey;
+  }
+}

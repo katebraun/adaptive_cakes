@@ -1,0 +1,12 @@
+.logo {
+  @include container;
+
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+  font-family: $playfair;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: bold;
+  border-bottom: 1px $pink solid;
+}

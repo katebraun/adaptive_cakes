@@ -5,6 +5,33 @@
 @import "global/mixin.scss";
 @import "global/basic.scss";
 
-//Common
-
 //Index
+@import "blocks/page-header.scss";
+@import "blocks/logo.scss";
+@import "blocks/navigation.scss";
+@import "blocks/intro.scss";
+@import "blocks/details.scss";
+@import "blocks/button.scss";
+@import "blocks/page-main.scss";
+@import "blocks/our-cakes.scss";
+@import "blocks/individual-order.scss";
+@import "blocks/order-item.scss";
+@import "blocks/order-filling.scss";
+@import "blocks/order-size.scss";
+@import "blocks/order-decor.scss";
+@import "blocks/your-choice.scss";
+@import "blocks/reviews.scss";
+@import "blocks/reviews-item.scss";
+@import "blocks/about-us.scss";
+@import "blocks/chief.scss";
+@import "blocks/chief-social.scss";
+@import "blocks/features.scss";
+@import "blocks/features-item.scss";
+@import "blocks/caring.scss";
+@import "blocks/order.scss";
+@import "blocks/contacts.scss";
+@import "blocks/contacts-social.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/footer-navigation.scss";
+@import "blocks/social.scss";
+@import "blocks/developers.scss";

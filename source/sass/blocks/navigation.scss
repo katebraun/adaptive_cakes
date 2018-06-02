@@ -1,0 +1,46 @@
+.navigation {
+  position: relative;
+  font-family: $circe;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.navigation__button {
+  position: absolute;
+  right: 0;
+  top: -40px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  font-size: 0;
+  background-color: grey;
+}
+
+.navigation__list {
+  @include reset-list;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navigation__item {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  border-top: 1px solid $lightpink;
+}
+
+.navigation__item:first-child {
+  border-top: none;
+}
+
+.navigation__link {
+  text-decoration: none;
+  color: $black;
+}
