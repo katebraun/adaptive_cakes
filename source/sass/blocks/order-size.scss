@@ -1,0 +1,34 @@
+.order-size {
+  @include reset-list;
+}
+
+.order-size__slide {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.order-size__img {
+  position: relative;
+  font-size: 16px;
+  margin: 0;
+  padding-top: 82px;
+  padding-bottom: 86px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 31px;
+    left: -44px;
+    background-image: url("../img/raster/icon-size.png");
+    background-position: center;
+    background-size: cover;
+    width: 111px;
+    height: 110px;
+  }
+}
+
+.order-size__text {
+  margin: 2px 0;
+}

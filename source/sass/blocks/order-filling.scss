@@ -1,0 +1,37 @@
+.order-filling {
+  @include reset-list;
+
+  position: relative;
+  text-align: center;
+  margin-top: 2px;
+}
+
+.order-filling__slide {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.order-filling__img {
+  background-color: $lightpink;
+}
+
+.order-filling__subtitle {
+  align-self: flex-start;
+  font-size: 16px;
+  margin-top: 25px;
+}
+
+.order-filling__text {
+  align-self: flex-start;
+  text-align: left;
+  margin-top: 8px;
+  line-height: 16px;
+}
+
+.order-filling__price {
+  font-family: $playfair;
+  font-size: 18px;
+  margin-top: 4px;
+}

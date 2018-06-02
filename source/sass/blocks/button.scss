@@ -21,4 +21,9 @@
     background-color: #c9033e;
     color: lightgrey;
   }
+
+  &--order,
+  &--submit {
+    padding: 14px 60px 11px;
+  }
 }

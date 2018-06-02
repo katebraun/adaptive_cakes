@@ -13,6 +13,8 @@
     position: absolute;
     background-image: url("../img/raster/header_picture_mobile.png");
     width: 320px;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 225px;
     top: -40px;
     left: -20px;

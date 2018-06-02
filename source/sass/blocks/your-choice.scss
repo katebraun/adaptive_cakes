@@ -1,0 +1,47 @@
+.your-choice {
+  background-color: $white;
+  padding-bottom: 35px;
+}
+
+.your-choice__title {
+  font-family: $playfair;
+  font-size: 22px;
+  margin-left: 18px;
+  margin-bottom: 15px;
+}
+
+.your-choice__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 280px;
+
+}
+
+.your-choice__label {
+  font-family: $intro;
+  font-size: 20px;
+  line-height: 30px;
+  color: $pink;
+  margin-left: 0;
+  vertical-align: middle;
+}
+
+.your-choice__input {
+  box-sizing: border-box;
+  border: 1px solid grey;
+  border-radius: 50px;
+  margin: 0 auto;
+  width: 244px;
+  height: 30px;
+  margin-bottom: 8px;
+
+  &:last-of-type {
+    margin-bottom: 28px;
+  }
+}
+
+.your-choice__input[placeholder] {
+  text-align: center;
+  color: $black;
+}
