@@ -8,5 +8,12 @@
   font-size: 16px;
   line-height: 32px;
   font-weight: bold;
-  border-bottom: 1px $pink solid;
+    border-bottom: 1px solid $lightpink;
+
+  &--footer {
+    color: $white;
+    border: none;
+    font-size: 28px;
+    padding-top: 40px;
+  }
 }

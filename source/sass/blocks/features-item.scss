@@ -1,0 +1,41 @@
+.feature-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 87px;
+
+  &:last-child {
+    padding-top: 61px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: calc(50% - (60 / 2));
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/raster/icon-ing-mobile.png");
+    background-position: center;
+    background-size: cover;
+  }
+
+  &:last-child::before {
+    top: 0px;
+    left: calc(50% - (84 / 2));
+    width: 84px;
+    height: 50px;
+    background-image: url("../img/raster/icon-cake_mobile.png");
+  }
+}
+
+.feature-item__subtitle {
+  font-size: 16px;
+}
+
+.feature-item__text {
+  margin-top: 5px;
+  text-align: center;
+  line-height: 17px;
+}

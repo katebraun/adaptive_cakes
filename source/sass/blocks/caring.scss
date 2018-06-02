@@ -1,0 +1,35 @@
+.caring__title {
+  font-family: $playfair;
+  font-size: 24px;
+  line-height: 33px;
+  margin-top: 34px;
+  margin-bottom: 6px;
+}
+
+.caring__subtitle {
+  font-family: $intro;
+  font-size: 22px;
+  line-height: 22px;
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+
+.caring__text {
+  position: relative;
+  margin-top: -11px;
+  line-height: 16px;
+  padding-bottom: 172px;
+  margin-bottom: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+    width: 320px;
+    height: 166px;
+    background-image: url("../img/raster/footer_picture_mobile.png");
+    background-position: center;
+    background-size: cover;
+  }
+}

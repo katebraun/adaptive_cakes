@@ -1,0 +1,27 @@
+.contacts-social__list {
+  @include reset-list;
+
+  display: flex;
+  margin-bottom: 48px;
+}
+
+.contacts-social__item {
+  width: 95px;
+  height: 65px;
+  font-size: 0;
+}
+
+.contacts-social__link {
+  display: block;
+  width: 65px;
+  height: 65px;
+  background-color: $white;
+  border-radius: 50%;
+  background-image: url("../img/raster/icon-insta_mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--vk {
+    background-image: url("../img/raster/icon-vk_mobile.png");
+  }
+}

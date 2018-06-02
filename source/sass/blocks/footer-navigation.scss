@@ -1,0 +1,15 @@
+.footer-navigation__list {
+  @include reset-list;
+
+  margin-top: 25px;
+  margin-left: 20px;
+}
+
+.footer-navigation__item {
+  margin: 0 0 18px;
+}
+
+.footer-navigation__link {
+  text-decoration: none;
+  color: $white;
+}

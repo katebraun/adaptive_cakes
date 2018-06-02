@@ -1,0 +1,70 @@
+.order {
+  background-color: $red;
+  padding-top: 5px;
+}
+
+.order__wrapper {
+  position: relative;
+  @include container;
+  padding-bottom: 129px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 145px;
+    bottom: 0px;
+    left: 0;
+    background-image: url("../img/raster/order.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+}
+
+.order__title {
+  font-family: $playfair;
+  font-size: 24px;
+  line-height: 33px;
+  margin-top: 23px;
+  margin-bottom: 6px;
+  color: $white;
+  text-align: center;
+}
+
+.order__list {
+  @include reset-list;
+
+  color: $white;
+  padding-top: 26px;
+  padding-left: 47px;
+  counter-reset: myCounter;
+}
+
+.order__item {
+  position: relative;
+  margin-bottom: 22px;
+
+  &::before {
+    position: absolute;
+    top: -20px;
+    left: -30px;
+    font-family: $playfair;
+    font-size: 35px;
+    content: counter(myCounter);
+    counter-increment: myCounter;
+    color: white;
+    display: block;
+    text-align: center;
+    line-height: normal;
+    height: auto;
+    width: auto;
+  }
+}
+
+.order__text {
+  margin: 8px 0;
+  line-height: 16px;
+  font-weight: lighter;
+}

@@ -1,0 +1,64 @@
+.contacts {
+  @include container;
+}
+
+.contacts__title {
+  font-family: $playfair;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  margin-top: 34px;
+  margin-bottom: 0px;
+}
+
+.contacts__subtitle {
+  font-family: $intro;
+  font-size: 22px;
+  line-height: 22px;
+  margin-top: 0;
+  margin-bottom: 9px;
+  margin-top: 6px;
+}
+
+.contacts__text {
+  margin-top: 0px;
+  line-height: 16px;
+  margin-bottom: 7px;
+}
+
+.contacts-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.contacts-form__name {
+  box-sizing: border-box;
+  width: 280px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  padding: 17px 10px 16px;
+  margin-bottom: 10px;
+}
+
+.contacts-form__email {
+  box-sizing: border-box;
+  width: 280px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  padding: 17px 10px 16px;
+  margin-bottom: 10px;
+}
+
+.contacts-form__message {
+  box-sizing: border-box;
+  width: 280px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  padding: 11px 10px 72px;
+  margin-bottom: 18px;
+}
